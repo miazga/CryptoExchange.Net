@@ -1,19 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <packagereference Include="Microsoft.NET.Test.Sdk" Version="17.1.0-preview-20211130-02"></packagereference>
-    <PackageReference Include="Moq" Version="4.16.1" />
-    <packagereference Include="NUnit" Version="3.13.2"></packagereference>
-    <packagereference Include="NUnit3TestAdapter" Version="4.2.0"></packagereference>
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0-preview-20211130-02"></PackageReference>
+        <PackageReference Include="Moq" Version="4.16.1"></PackageReference>
+        <PackageReference Include="NUnit" Version="3.13.2"></PackageReference>
+        <PackageReference Include="NUnit3TestAdapter" Version="4.2.0"></PackageReference>
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\CryptoExchange.Net\CryptoExchange.Net.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\CryptoExchange.Net\CryptoExchange.Net.csproj"/>
+    </ItemGroup>
+
 
 </Project>

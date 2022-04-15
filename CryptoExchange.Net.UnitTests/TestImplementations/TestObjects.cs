@@ -1,12 +1,11 @@
 ﻿using Newtonsoft.Json;
 
-namespace CryptoExchange.Net.UnitTests.TestImplementations
+namespace CryptoExchange.Net.UnitTests.TestImplementations;
+
+public class TestObject
 {
-    public class TestObject
-    {
-        [JsonProperty("other")]
-        public string StringData { get; set; }
-        public int IntData { get; set; }
-        public decimal DecimalData { get; set; }
-    }
+    [JsonProperty("other")] public string StringData { get; set; }
+
+    public int IntData { get; set; }
+    public decimal DecimalData { get; set; }
 }
